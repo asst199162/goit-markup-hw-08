@@ -1,0 +1,18 @@
+@import './base/reset';
+@import './utils/varibles';
+@import './base/common';
+
+@import './components/container';
+@import './components/sections';
+@import './components/icon';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/peculiarities';
+@import './layout/work';
+@import './layout/commands';
+@import './layout/customers';
+@import './layout/footer';
+@import './layout/modal/backdrop';
+@import './layout/modal/modal';
+@import './portfolio/portfolio';

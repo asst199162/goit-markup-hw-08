@@ -1,0 +1,31 @@
+.peculiarities {
+  display: flex;
+}
+
+.peculiarities__item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.peculiarities__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+}
+.peculiarities__text {
+  margin-top: 10px;
+}
+
+.peculiarities__box {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
