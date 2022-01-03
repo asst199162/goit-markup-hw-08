@@ -1,4 +1,7 @@
 .section_no-padding-top {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
   padding-top: 0px;
 }
 
