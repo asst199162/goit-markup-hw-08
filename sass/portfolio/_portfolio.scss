@@ -11,7 +11,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 40px;
-  margin-right: -8px;
+  justify-content: space-between;
 
   @media screen and (max-width: 768px) {
     margin-top: -15px;
@@ -27,7 +27,10 @@
 }
 
 .filter__item {
-  margin-right: 8px;
+  .filter__item + & {
+    margin-left: 8px;
+  }
+
   @media screen and (max-width: 768px) {
     margin-top: 15px;
   }
@@ -59,7 +62,7 @@
 }
 
 .portfolio {
-  margin-bottom: -30px;
+  justify-content: space-between;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -67,6 +70,9 @@
 
     margin-right: -30px;
   }
+}
+.portfolio-padding {
+  padding: 20px 24px;
 }
 
 .portfolio__item {

@@ -19,7 +19,7 @@
             <nav class="navigation">
                 <a href="./index.html" class="logo__dark"> <span class="logo">Web</span>Studio</a>
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a class="navigation__link navigation__link__active" href="./index.html">Студия</a></li>
+                    <li class="navigation__item"><a class="navigation__link navigation__link__active navigation__link__active__color" href="./index.html">Студия</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
                 </ul>
@@ -49,7 +49,7 @@
 
                 <div class="mob-menu is-hidden" data-menu>
                     <div class="mob-menu__thumb">
-                        <button type="button" class="mob-menu__btn " data-menu-close><svg class="mob-menu__icon--close" width="40"
+                        <button type="button" class="mob-menu__close " data-menu-close><svg class="mob-menu__icon--close" width="40"
                                 height="40">
                                 <use href="./images/icons.svg#icon-close-black"></use>
                             </svg></button>
@@ -556,10 +556,9 @@
                 <div class="modal-form__field">
                     <label for="tel">Телефон</label>
                     <div class="modal-form__wrap">
-                        <input type="text" 
+                        <input type="tel" 
                         class="modal-form__input"
                         id="tel"
-                        type="tel" 
                         name="user-tel"
                         required>
                         <svg class="modal-form__icon">
@@ -571,9 +570,8 @@
                 <div class=" modal-form__field">
                     <label for="email">Почта</label>
                     <div class="modal-form__wrap">
-                        <input type="text" 
+                        <input type="email" 
                         id="email"
-                        type="email"
                         class="modal-form__input" 
                         name="user-mail"
                         required>
@@ -584,7 +582,7 @@
                 </div>
                 <div class="modal-form__field">
                     <label for="comments">Комментарий</label>
-                    <textarea name=""
+                    <textarea name="textarea "
                     id="comments"
                     placeholder="Введите текст"
                     class="modal-form__comments"></textarea>
@@ -603,14 +601,14 @@
                         </span>                                
                             Соглашаюсь с рассылкой и принимаю
                             <span>
-                                <a href="#"class="modal-check__license">Условия договора</a>
+                                <a href="#" class="modal-check__license">Условия договора</a>
                             </span>
                         </label>
                     </div>
                     <div class="modal-btn">
-                        <button type="submit" class="modal-btn__btn">Отправить</button></form>
+                        <button type="submit" class="modal-btn__btn">Отправить</button>
                     </div>
-
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>

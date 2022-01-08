@@ -17,18 +17,22 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  padding: 15px 0;
   color: var(--studio-header-logo-color);
-  padding-bottom: 25px;
-  padding-top: 24px;
-  margin-right: 93px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 25px;
+    padding-top: 24px;
+    margin-right: 93px;
+  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 768px) {
-    position: relative;
-  }
+  // @media screen and (max-width: 768px) {
+  //   position: relative;
+  // }
+  justify-content: space-between;
 }
 
 .navigation {
@@ -47,6 +51,10 @@
   &:hover,
   &:focus {
     color: var(--hover-focus-color);
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -73,6 +81,9 @@
   bottom: -1px;
   left: 0;
   border-radius: 2px;
+}
+.navigation__link__active__color {
+  color: rgba(33, 150, 243, 1);
 }
 
 .navigation-contacts__link {
