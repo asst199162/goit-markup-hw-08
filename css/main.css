@@ -1375,12 +1375,12 @@ body {
   margin-top: 12px;
 }
 
-.modal-form:not(:first-child) {
-  margin-top: 10px;
-}
-
 .modal-form__wrap {
   position: relative;
+}
+
+.modal-form__field:not(:first-child) {
+  margin-top: 10px;
 }
 
 .is-hidden {
@@ -1459,6 +1459,22 @@ body {
 
 .modal-form__comments:focus {
   border-color: var(--hover-focus-color);
+}
+
+.modal-form__comments::-webkit-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form__comments:-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form__comments::-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form__comments::placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-check {
