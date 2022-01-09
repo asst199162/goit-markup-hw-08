@@ -99,7 +99,10 @@
 }
 
 .modal-check__license {
-  font-size: 14px;
+  font-size: 11px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
   line-height: 24px;
   line-height: 1.46%;
   box-sizing: border-box;
@@ -160,7 +163,7 @@
 
 .modal-check__text {
   font-size: 11px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
   }
   line-height: 24px;
